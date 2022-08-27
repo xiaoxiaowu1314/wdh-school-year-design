@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,user-scalable=0,maximum-scale=1.0,minimum-scale=1.0">
+    <title>三明学院专业学科交流平台</title>
+    <meta name="description" content="帮助同学渡过大学迷茫期，从我要学到我想学的转变，在大学学习中游刃有余！">
+    <meta name="keywords" content="学科交流，专业课程，三明学院，专业课学习，专业课资源">
+
+    <link rel="shortcut icon" href="icon/smxy-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="js/animate.js"></script> -->
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <h1 class="logoBox"><img src="icon/smxyBigIcon.png" alt="学科交流平台" title="欢迎使用" class="logo"></h1>
+    <div class="nav">
+        <div class="majorContent">
+            <span class="majorName">专业：</span><input type="text" name="" id="major" value="通信工程">
+            <ul class="majorContentDown">
+                <li data-name="rengongzhineng">人工智能</li>
+                <li data-name="wulianwanggongcheng">物联网工程</li>
+                <li data-name="tumugongcheng">土木工程</li>
+                <li data-name="fengjingyuanlin">风景园林</li>
+                <li data-name="jixieshejizhizaojiqizidonghua">机械设计制造及其自动化</li>
+                <li data-name="fuzhuangyufushisheji">服装与服饰设计</li>
+                <li data-name="gongchengzaojia">工程造价</li>
+                <li data-name="dianzishangwu">电子商务</li>
+                <li data-name="dianzixinxigongcheng">电子信息工程</li>
+                <li data-name="shichangyingxiao">市场营销</li>
+                <li data-name="xiaoxuejiaoyu">小学教育</li>
+                <li data-name="yingyu">英语</li>
+                <li data-name="maoyijingji">贸易经济</li>
+                <li data-name="shuxueyuyingyongshuxue">数学与应用数学</li>
+                <li data-name="huaxue">化学</li>
+            </ul>
+        </div>
+        <div class="gradeContent">
+            <span class="gradeName">年级：</span><input type="number" name="" id="grade" value="2019">
+        </div>
+        <div class="searchContent">
+            <input type="text" class="search" value="请输入课程">
+            <button type="submit" class="searchBtn">搜索</button>
+            <ul class="searchContentDown">
+                <li data-name="dianlufenxi">电路分析</li>
+                <li data-name="shujujiegou">数据结构</li>
+                <li data-name="diancichangyudiancibo">电磁场与电磁波</li>
+                <li data-name="tongxinyuanli">通信原理</li>
+                <li data-name="lisanshuxue">离散数学</li>
+            </ul>
+        </div>
+        <div class="loginContent">
+            <a href="javascript:;" class="login" id="link">登入&nbsp;/&nbsp;注册</a>
+        </div>
+        <div id="loginTar" class="loginTar">
+            <div id="title" class="login-title">欢迎登入！
+                <span><a id="closeBtn" href="javascript:void(0);" class="close-login">关闭</a></span>
+            </div>
+            <div class="login-input-content">
+                <div class="login-input">
+                    <label>用户名：</label>
+                    <input type="text" placeholder="请输入用户名" name="info[username]" id="username" class="list-input">
+                </div>
+                <div class="login-input">
+                    <label>登录密码：</label>
+                    <input type="password" placeholder="请输入登录密码" name="info[password]" id="password" class="list-input">
+                </div>
+            </div>
+            <div id="loginBtn" class="login-button"><a href="javascript:void(0);" id="login-button-submit">登录</a></div>
+        </div>
+        <!-- 遮盖层 -->
+        <div id="bg" class="login-bg"></div>
+
+    </div>
+    <div class="show">
+        <div class="recommendShow">
+            <ul class="recommendShow-Content">
+                <li>学习App下载</li>
+                <li><a href="javascript:;">微信读书</a></li>
+                <li><a href="javascript:;">哔哩哔哩</a></li>
+                <li><a href="javascript:;">中国Mocc</a></li>
+                <li><a href="javascript:;">学习通</a></li>
+            </ul>
+
+        </div>
+        <div class="slideShow">
+            <div class="leftBtn glyphicon glyphicon-chevron-left"></div>
+            <div class="rightBtn glyphicon glyphicon-chevron-right"></div>
+            <ul class="slideShow-Content">
+                <li>
+                    <a href="https://weread.qq.com/" target="_blank" title="微信读书-书山求学路"><img src="images/WeRead.png"
+                            alt="微信读书"></a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/" target="_blank" title="哔哩哔哩-上课不努力，B站读大学"><img
+                            src="images/bilibili.jpg" alt="哔哩哔哩"></a>
+                </li>
+                <li>
+                    <a href="https://www.icourse163.org/" target="_blank" title="MOCC-好的大学，没有围墙"><img
+                            src="images/moccBigPicture.png" alt="中国Mocc"></a>
+                </li>
+                <li>
+                    <a href="https://passport2.chaoxing.com/login?fid=&newversion=true&refer=https://i.chaoxing.com"
+                        target="_blank" title="学习通-通学习"><img src="images/xueXiTong.jpg" alt="学习通"></a>
+                </li>
+            </ul>
+            <ol class="circle">
+
+            </ol>
+        </div>
+        <div class="hopeShow">
+            <img src="images/TestsPass2.jpg" alt="学海无涯苦作舟" title="愿君逢考必过">
+        </div>
+    </div>
+    <div class="course-recommended clearfix">
+        <h3 class="course-recommended_title">课程推荐</h3>
+        <div class="course-recommended_head">
+            <span>计算机基础</span>
+            <span>理学工学农学</span>
+            <span>文史哲法</span>
+            <span>心理学</span>
+            <span>经济管理</span>
+            <span>音乐与艺术</span>
+        </div>
+        <div class="course-recommended_body clearfix">
+            <div class="course clearfix cumputer">
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/C.webp" alt="C语言">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">程序设计与算法（一）C语言程序设计</h3>
+                        <span class="courseSchool">浙江大学</span>
+                        <div class="courseTeacher">翁恺</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/C++.webp" alt="C++">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">程序设计与算法（三）C++面向对象程序设计</h3>
+                        <span class="courseSchool">传智播客</span>
+                        <div class="courseTeacher">黑马程序员</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/python.webp" alt="Python语言程序设计">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">Python语言程序设计</h3>
+                        <span class="courseSchool">北京理工大学</span>
+                        <div class="courseTeacher">嵩天</div>
+                        <div class="course-ItemContent-Bottom">
+                            <!-- <em class="hot glyphicon glyphicon-fire"></em> -->
+                            <span class="Countdowns">距开课</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/daShuJu.webp" alt="大数据">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">大数据算法</h3>
+                        <span class="courseSchool">哈尔滨工业大学</span>
+                        <div class="courseTeacher">王宏志</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/renGongZhiNeng.webp" alt="人工智能">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">人工智能：模型与算法</h3>
+                        <span class="courseSchool">浙江大学</span>
+                        <div class="courseTeacher">吴飞</div>
+                        <div class="course-ItemContent-Bottom">
+                            <!-- <em class="hot glyphicon glyphicon-fire"></em> -->
+                            <span class="Countdowns">距开课</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/jiSuanJiCaoZuoXiTong.webp" alt="计算机操作系统">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">计算机操作系统</h3>
+                        <span class="courseSchool">南京大学</span>
+                        <div class="courseTeacher">骆斌</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">距开课</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/suanFaSheJiYuQiuJie.webp" alt="算法设计与问题求解">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">算法设计与问题求解</h3>
+                        <span class="courseSchool">北京交通大学</span>
+                        <div class="courseTeacher">李清勇</div>
+                        <div class="course-ItemContent-Bottom">
+                            <!-- <em class="hot glyphicon glyphicon-fire"></em> -->
+                            <!-- <span class="Countdowns">距开课</span> -->
+                            <a href="zip/bootstrap-3.4.1-dist.zip"
+                                class="getResources glyphicon glyphicon-circle-arrow-down"></a>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="course clearfix science">
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/tongXinYuanLi.webp" alt="通信原理">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">通信原理</h3>
+                        <span class="courseSchool">国防科技大学</span>
+                        <div class="courseTeacher">马东堂</div>
+                        <div class="course-ItemContent-Bottom">
+                            <!-- <em class="hot glyphicon glyphicon-fire"></em> -->
+                            <span class="Countdowns">距开课</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/xinHaoYuXiTong.webp" alt="信号与系统">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">信号与系统</h3>
+                        <span class="courseSchool">东南大学</span>
+                        <div class="courseTeacher">孟桥</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/xianXinDaiShu.webp" alt="满分线性代数">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">满分线性代数</h3>
+                        <span class="courseSchool">西安电子科技大学</span>
+                        <div class="courseTeacher">杨威</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/gaiLvLun.webp" alt="概率论">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">概率论</h3>
+                        <span class="courseSchool">国防科技大学</span>
+                        <div class="courseTeacher">马东堂</div>
+                        <div class="course-ItemContent-Bottom">
+                            <!-- <em class="hot glyphicon glyphicon-fire"></em> -->
+                            <span class="Countdowns">距开课</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/liSanShuXue.webp" alt="离散数学">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">离散数学</h3>
+                        <span class="courseSchool">西安电子科技大学</span>
+                        <div class="courseTeacher">杨威</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/danPianJi.webp" alt="单片机">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">单片机</h3>
+                        <span class="courseSchool">北京交通大学</span>
+                        <div class="courseTeacher">李清勇</div>
+                        <div class="course-ItemContent-Bottom">
+                            <!-- <em class="hot glyphicon glyphicon-fire"></em> -->
+                            <!-- <span class="Countdowns">距开课</span> -->
+                            <a href="zip/bootstrap-3.4.1-dist.zip"
+                                class="getResources glyphicon glyphicon-circle-arrow-down"></a>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/daXueWuLi.webp" alt="大学物理">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">大学物理</h3>
+                        <span class="courseSchool">北京交通大学</span>
+                        <div class="courseTeacher">李清勇</div>
+                        <div class="course-ItemContent-Bottom">
+                            <!-- <em class="hot glyphicon glyphicon-fire"></em> -->
+                            <!-- <span class="Countdowns">距开课</span> -->
+                            <a href="zip/bootstrap-3.4.1-dist.zip"
+                                class="getResources glyphicon glyphicon-circle-arrow-down"></a>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/dianCiChangYuDianCiBo.webp" alt="电磁场与电磁波">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">电磁场与电磁波</h3>
+                        <span class="courseSchool">东南大学</span>
+                        <div class="courseTeacher">孟桥</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/dianLuFenXi.webp" alt="电路分析">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">电路分析</h3>
+                        <span class="courseSchool">东南大学</span>
+                        <div class="courseTeacher">孟桥</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/gaoPinDianZiXianLu.webp" alt="高频电子线路">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">高频电子线路</h3>
+                        <span class="courseSchool">东南大学</span>
+                        <div class="courseTeacher">孟桥</div>
+                        <div class="course-ItemContent-Bottom">
+                            <!-- <em class="hot glyphicon glyphicon-fire"></em> -->
+                            <span class="Countdowns">距开课</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/liuTiLixue.webp" alt="流体力学">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">流体力学</h3>
+                        <span class="courseSchool">东南大学</span>
+                        <div class="courseTeacher">孟桥</div>
+                        <div class="course-ItemContent-Bottom">
+                            <!-- <em class="hot glyphicon glyphicon-fire"></em> -->
+                            <span class="Countdowns">距开课</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/weiJiYuanLi.webp" alt="微机原理">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">微机原理</h3>
+                        <span class="courseSchool">哈尔滨工业大学</span>
+                        <div class="courseTeacher">俞洋</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/moDian.webp" alt="模拟电子技术基础">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">模拟电子技术基础</h3>
+                        <span class="courseSchool">华北电力大学（保定）</span>
+                        <div class="courseTeacher">谢志远</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/shuZiXinHaoYuXiTong.webp" alt="数字信号处理">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">数字信号处理</h3>
+                        <span class="courseSchool">华侨大学</span>
+                        <div class="courseTeacher">陈婧</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/fenJingYuanLin.webp" alt="风景园林">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">风景园林</h3>
+                        <span class="courseSchool">华北电力大学（保定）</span>
+                        <div class="courseTeacher">谢志远</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/gongChengLiXue.webp" alt="工程力学">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">工程力学</h3>
+                        <span class="courseSchool">华北电力大学（保定）</span>
+                        <div class="courseTeacher">谢志远</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="course clearfix cultural">
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/ziZhiTongJian.webp" alt="《资治通鉴》导读">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">《资治通鉴》导读</h3>
+                        <span class="courseSchool">复旦大学</span>
+                        <div class="courseTeacher">姜鹏</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/sheHuiYuanLi.webp" alt="社会原理">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">社会原理</h3>
+                        <span class="courseSchool">中南财经政法大学</span>
+                        <div class="courseTeacher">徐鹏</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/jioaYuZheXue.webp" alt="教育哲学">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">教育哲学</h3>
+                        <span class="courseSchool">中南财经政法大学</span>
+                        <div class="courseTeacher">徐鹏</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/xingShiYuZhenCe.webp" alt="形式与政策">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">形式与政策</h3>
+                        <span class="courseSchool">中央财经大学</span>
+                        <div class="courseTeacher">王存同</div>
+                        <div class="course-ItemContent-Bottom">
+                            <!-- <em class="hot glyphicon glyphicon-fire"></em> -->
+                            <span class="Countdowns">距开课</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/liFaXue.webp" alt="立法学">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">立法学</h3>
+                        <span class="courseSchool">西北大学</span>
+                        <div class="courseTeacher">代水平</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/xiFangSiXiang.webp" alt="二十世纪西方思想文化潮流">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">二十世纪西方思想文化潮流</h3>
+                        <span class="courseSchool">华东师范大学</span>
+                        <div class="courseTeacher">刘擎</div>
+                        <div class="course-ItemContent-Bottom">
+                            <!-- <em class="hot glyphicon glyphicon-fire"></em> -->
+                            <!-- <span class="Countdowns">火热开课中</span> -->
+                            <a href="zip/bootstrap-3.4.1-dist.zip"
+                                class="getResources glyphicon glyphicon-circle-arrow-down"></a>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/mingGuoWenXue.webp" alt="民国文学与文化">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">民国文学与文化</h3>
+                        <span class="courseSchool">大连理工大学</span>
+                        <div class="courseTeacher">王玉春</div>
+                        <div class="course-ItemContent-Bottom">
+                            <!-- <em class="hot glyphicon glyphicon-fire"></em> -->
+                            <!-- <span class="Countdowns">火热开课中</span> -->
+                            <a href="zip/bootstrap-3.4.1-dist.zip"
+                                class="getResources glyphicon glyphicon-circle-arrow-down"></a>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/shiJieJingDianWenXue.webp" alt="世界经典文学鉴赏">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">世界经典文学鉴赏</h3>
+                        <span class="courseSchool">大连海事大学</span>
+                        <div class="courseTeacher">梁呐</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="course clearfix psychology">
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/fanZuiXinLiXue.webp" alt="犯罪心理学">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">犯罪心理学</h3>
+                        <span class="courseSchool">复旦大学</span>
+                        <div class="courseTeacher">姜鹏</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/hunLian.webp" alt="婚恋-职场-人格">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">婚恋-职场-人格</h3>
+                        <span class="courseSchool">武汉理工大学</span>
+                        <div class="courseTeacher">张晓文</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/yiYuZheng.webp" alt="抑郁症的心理辅导">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">抑郁症的心理辅导</h3>
+                        <span class="courseSchool">武汉大学</span>
+                        <div class="courseTeacher">张荣华</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/ziWoRenZhi.webp" alt="自我认知与情绪管理">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">自我认知与情绪管理</h3>
+                        <span class="courseSchool">哈尔滨工业大学</span>
+                        <div class="courseTeacher">吴松全</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="course clearfix economics">
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/kuaiJiXue.webp" alt="会计学">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">会计学</h3>
+                        <span class="courseSchool">浙江大学</span>
+                        <div class="courseTeacher">张莫</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/jingJiXue.webp" alt="经济学">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">经济学</h3>
+                        <span class="courseSchool">电子科技大学</span>
+                        <div class="courseTeacher">吴松</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/jinRongXue.webp" alt="金融学">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">金融学</h3>
+                        <span class="courseSchool">齐齐哈尔大学</span>
+                        <div class="courseTeacher">吴松</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/guojiShuiShou.webp" alt="国际税收">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">国际税收</h3>
+                        <span class="courseSchool">中央财经大学</span>
+                        <div class="courseTeacher">杨志清</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/zhenFu.webp" alt="政府预算管理">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">政府预算管理</h3>
+                        <span class="courseSchool">中央财经大学</span>
+                        <div class="courseTeacher">肖鹏</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/shenJiXue.webp" alt="审计学">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">审计学</h3>
+                        <span class="courseSchool">西南交通大学</span>
+                        <div class="courseTeacher">饶翠华</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/huoBiYinghangxue.webp" alt="货币银行学">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">货币银行学</h3>
+                        <span class="courseSchool">东北财经大学</span>
+                        <div class="courseTeacher">范立夫</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/zhenjuan.webp" alt="证券投资学">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">证券投资学</h3>
+                        <span class="courseSchool">北京信息科技大学</span>
+                        <div class="courseTeacher">徐颖</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/dianziShangWu.webp" alt="电子商务系统的分析与设计">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">电子商务系统的分析与设计</h3>
+                        <span class="courseSchool">北京交通大学</span>
+                        <div class="courseTeacher">马敏书</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="course clearfix musicArt">
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/shangShui.webp" alt="中国画学·中国山水画的观物与体象">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">中国画学·中国山水画的观物与体象</h3>
+                        <span class="courseSchool">中国美术学院</span>
+                        <div class="courseTeacher">张捷</div>
+                        <div class="course-ItemContent-Bottom">
+                            <em class="hot glyphicon glyphicon-fire"></em>
+                            <span class="Countdowns">火热开课中!</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-Item">
+                    <div class="course-ItemImg">
+                        <img class="courseImg" src="upload/yishu.webp" alt="艺术教育">
+                    </div>
+                    <div class="course-ItemContent">
+                        <h3 class="courseDescription">艺术教育</h3>
+                        <span class="courseSchool">保定学院</span>
+                        <div class="courseTeacher">孟抗美</div>
+                        <div class="course-ItemContent-Bottom">
+                            <!-- <em class="hot glyphicon glyphicon-fire"></em> -->
+                            <span class="Countdowns">距开课</span>
+                            <span class="people-words">人已参加</span>
+                            <span class="people">123</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="happySummer">
+        早上好！
+    </div>
+
+    <em class="hot glyphicon glyphicon-fire"></em>
+    <em class="download glyphicon glyphicon-circle-arrow-down"></em>
+    <i class="sure glyphicon glyphicon-thumbs-up"></i>
+    <i class="cancle glyphicon glyphicon-thumbs-down"></i>
+    <div class="goBack glyphicon glyphicon-plane"></div>
+</body>
+
+</html>
